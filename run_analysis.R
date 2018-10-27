@@ -30,12 +30,13 @@ test_subj <- read.table("UCI HAR Dataset/test/subject_test.txt")
 test <- cbind(test_subj, test_lab, test_set)
 colnames(test)<-c('training_subject','training_ID',as.character(features.mn_sd))
 
-
 #Reshape Dataframe by subject and activity
 Merged_data <- rbind(training, test)
 Merged_data$training_subject<-as.factor(Merged_data$training_subject)
 Merged_data$training_ID<-as.factor(Merged_data$training_ID)
 
+Merged_data<-melt(Merged_data,id.vars = c('training_subject','training_ID'))
+Merged_data<-dcast(tt,training_ID+training_subject~variable,mean)
 
-
-
+#Save data in table format
+write.table(Merged_data,'tidy.txt',row.name=FALSE)
