@@ -1,3 +1,8 @@
+# Identifier
+
+training_subject ~ Traininig Subject# 
+training_ID ~ Activity type
+
 # Activities
 
 1. WALKING
