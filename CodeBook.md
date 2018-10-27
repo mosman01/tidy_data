@@ -1,7 +1,7 @@
 # Identifier
 
-training_subject ~ Traininig Subject# 
-training_ID ~ Activity type
+* training_subject ~ Traininig Subject# 
+* training_ID ~ Activity type
 
 # Activities
 
