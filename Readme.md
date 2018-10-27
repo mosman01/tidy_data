@@ -1,7 +1,7 @@
-#Assignment - Week 4
+# Assignment - Week 4
 Analysing fitness data
 
-##What this R file does?!
+## What this R file does?!
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement.
 * Uses descriptive activity names to name the activities in the data set
