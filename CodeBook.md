@@ -1,7 +1,10 @@
-# Identifier
+#This file has the variables' names
+
+# Identifiers
 
 * training_subject ~ Traininig Subject# 
 * training_ID ~ Activity type
+(Note that training_ID in the tidy_data.txt means Activity type by ID)
 
 # Activities
 
