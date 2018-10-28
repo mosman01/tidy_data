@@ -36,7 +36,7 @@ Merged_data$training_subject<-as.factor(Merged_data$training_subject)
 Merged_data$training_ID<-as.factor(Merged_data$training_ID)
 
 Merged_data<-melt(Merged_data,id.vars = c('training_subject','training_ID'))
-Merged_data<-dcast(tt,training_ID+training_subject~variable,mean)
+Merged_data<-dcast(Merged_data,training_ID+training_subject~variable,mean)
 
 #Save data in table format
 write.table(Merged_data,'tidy.txt',row.name=FALSE)
