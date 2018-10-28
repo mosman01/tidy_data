@@ -16,6 +16,6 @@ The aim of the project is to clean and extract usable data from the Samsung Gala
 * CodeBook.md : the CodeBook reference to the variables in tidy_data.txt
 * README.md : the analysis description of the code in run_analysis.R
 
-# Required Libraries:
+## Required Libraries:
 
 * library(data.table)
